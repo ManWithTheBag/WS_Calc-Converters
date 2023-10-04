@@ -18,7 +18,7 @@ public class MainController {
 
     @GetMapping("/trigonometry")
     public String trigonometry() {
-        return "/calc/sin_cos_tang";
+        return "calc/trigonometry";
     }
 
 }

@@ -1,41 +1,17 @@
 body {
-    background-color: #F8F0E5;
-    margin: 1rem 10rem 0rem;
+    background-color: #F9F7F7;
 }
 
-._font-size-1 {
-    font-size: 2rem;
-    font-weight: bold;
-}
+/*._font-size-1 {*/
+/*    font-size: 2rem;*/
+/*    font-weight: bold;*/
+/*}*/
 
-._font-size-2 {
-    font-size: 1rem;
-    font-weight: bolder;
-}
+/*._font-size-2 {*/
+/*    font-size: 1rem;*/
+/*    font-weight: bolder;*/
+/*}*/
 
-._font-color {
-    color: #0F2C59;
-}
-
-._text-indent {
-    margin: 0 1rem 0;
-}
-
-._align-title-text {
-    display: inline-block;
-}
-
-._link-font-color:link {
-    color: #0F2C59;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-._link-font-color:hover {
-    color: #44608f;
-    background-color: transparent;
-    text-decoration: none;
-}
 
 
 /**/

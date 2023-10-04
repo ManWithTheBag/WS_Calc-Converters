@@ -1,12 +1,19 @@
 <th:block th:fragment="navbar">
     <header>
-        <nav>
-            <div class="_align-title-text">
-                <a class="_font-size-1 _text-indent _link-font-color" href="/" th:href="@{/}">MathOnline</a>
+        <nav class="_navbar-background _navbar-position">
+            <div class="_navbar-content-left">
+                <div>
+                    <a class="_navbar-font-link _navbar-text-brand " href="/" th:href="@{/}">MathOnline</a>
+                </div>
+                <div>
+                    <a class="_navbar-font-link _navbar-text-link" href="/calculatorsList"
+                       th:href="@{/calculatorsList}">Calculations</a>
+                </div>
             </div>
-            <div class="_align-title-text">
-                <a class="_font-size-2 _text-indent _link-font-color" href="/calculatorsList"
-                   th:href="@{/calculatorsList}">Calculations</a>
+            <div class="_navbar-content-right">
+                <a href="#">
+                    <img class="_navbar-icon _align-title-text" src="/img/icons/global_icon.png" alt="Language">
+                </a>
             </div>
         </nav>
     </header>
