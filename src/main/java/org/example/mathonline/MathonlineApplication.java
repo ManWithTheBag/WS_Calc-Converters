@@ -1,4 +1,4 @@
-package com.example.mathonline;
+package org.example.mathonline;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

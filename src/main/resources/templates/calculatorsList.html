@@ -8,59 +8,35 @@
         <!--  Navbar section-->
         <div th:replace="~{fragments/navbar :: navbar}"></div>
 
-        <!--  Calculations section-->
-        <dev>
-            <h1 class="_center _text-title">Trigonometry</h1>
-        </dev>
+        <!--Content section-->
+        <div class="_content-position" >
+            <div class="_text-align-center">
+                <samp class="_text-mainTitle">Calculators</samp>
+            </div>
 
-        <br>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <a href="/trigonometry">
-                    <div class="card h-100">
-                        <img src="/img/calculatorsCard/trigonometry.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Trigonometry</h5>
-                            <p class="card-text"> The study of angles and of the angular relationships of planar and
-                                three-dimensional figures is known as trigonometry</p>
+            <!--TODO Loop of calculation's type-->
+
+            <th:block>
+                <div>
+                    <samp class="_text-minorTitle">Trigonometry</samp>
+
+                    <!--TODO Loop from calculation's type-->
+                    <th:block>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a class="_text-simple _links" href="/trigonometry">Calculation of sine, cosine, tangent and cotangent</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <!--        <img src="..." class="card-img-top" alt="...">-->
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                    </div>
+                    </th:block>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <!--        <img src="..." class="card-img-top" alt="...">-->
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <!--        <img src="..." class="card-img-top" alt="...">-->
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
+            </th:block>
+
         </div>
 
+        <div th:replace="~{fragments/footer :: footer}"></div>
     </div>
-
-    <div th:replace="~{fragments/footer :: footer}"></div>
 </div>
 </body>
 </html>

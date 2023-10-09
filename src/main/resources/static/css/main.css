@@ -1,34 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #F9F7F7;
 }
 
-/*._font-size-1 {*/
-/*    font-size: 2rem;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*._font-size-2 {*/
-/*    font-size: 1rem;*/
-/*    font-weight: bolder;*/
-/*}*/
-
-
-
-/**/
-/*Footer*/
-#page-container {
-    position: relative;
-    min-height: 100vh;
+._content-position{
+    margin: 1rem 20rem 0rem 1rem ;
 }
 
-#content-wrap {
-    padding-bottom: 2.5rem; /* Footer height */
+._items-align-center{
+    display: flex;
+    align-items: center;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem; /* Footer height */
+._text-align-center{
     text-align: center;
+}
+
+._text-mainTitle{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+._text-minorTitle{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+._text-simple{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
 }

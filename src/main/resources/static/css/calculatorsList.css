@@ -1,8 +1,10 @@
-._center {
-    text-align: center;
-}
 
-._text-title{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+._links{
+    /*margin-left: 2rem;*/
+    color: #222831;
+    /*text-decoration: none;*/
+}
+._links:hover{
+    text-decoration: none;
+    color: #3d4657;
 }
