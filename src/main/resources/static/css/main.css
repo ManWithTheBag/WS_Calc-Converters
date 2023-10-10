@@ -5,6 +5,27 @@ body {
     background-color: #F9F7F7;
 }
 
+/**/
+/*Header fixed on top viewport*/
+._sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+/**/
+
+/**/
+/*Setup text case*/
+._text-uppercase{
+    text-transform: capitalize
+}
+._text-uppercase-first ::first-letter{
+    text-transform: capitalize
+}
+/**/
+
+/**/
+/*Items positions*/
 ._content-position{
     margin: 1rem 20rem 0rem 1rem ;
 }
@@ -17,7 +38,10 @@ body {
 ._text-align-center{
     text-align: center;
 }
+/**/
 
+/**/
+/*Font size*/
 ._text-mainTitle{
     font-family: 'Wix Madefor Text', sans-serif;
     font-size: 3rem;
@@ -35,3 +59,4 @@ body {
     font-size: 1.4rem;
     font-weight: 300;
 }
+/**/

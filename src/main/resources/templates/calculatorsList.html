@@ -9,34 +9,30 @@
         <div th:replace="~{fragments/navbar :: navbar}"></div>
 
         <!--Content section-->
-        <div class="_content-position" >
+        <div class="_content-position">
             <div class="_text-align-center">
-                <samp class="_text-mainTitle">Calculators</samp>
+                <samp class="_lang-calculators _text-uppercase _text-mainTitle">calculators</samp>
             </div>
 
-            <!--TODO Loop of calculation's type-->
-
-            <th:block>
+            <div>
+                <samp class="_lang-trigonometry _text-uppercase _text-minorTitle">trigonometry</samp>
                 <div>
-                    <samp class="_text-minorTitle">Trigonometry</samp>
-
-                    <!--TODO Loop from calculation's type-->
-                    <th:block>
-                        <div>
-                            <ul>
-                                <li>
-                                    <a class="_text-simple _links" href="/trigonometry">Calculation of sine, cosine, tangent and cotangent</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </th:block>
+                    <ul>
+                        <li>
+                            <a class="_lang-trigonometry-functions _text-simple _links" href="/trigonometry">calculation of sine, cosine, tangent and cotangent</a>
+                        </li>
+                    </ul>
                 </div>
-            </th:block>
-
+            </div>
         </div>
-
-        <div th:replace="~{fragments/footer :: footer}"></div>
     </div>
+
+    <div th:replace="~{fragments/footer :: footer}"></div>
 </div>
+</div>
+
+
+    <!--Scripts section-->
+    <div th:replace="~{fragments/scriptsfragment :: scripts(scriptLink = null, langJsonPath = '/json/lang/langCalculationsList.json')}"></div>
 </body>
 </html>

@@ -26,4 +26,10 @@ public class MainController {
         return "calc/trigonometry";
     }
 
+
+    @GetMapping("/one")
+    public String one(){
+        return "/one";
+    }
+
 }
