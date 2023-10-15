@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<div th:replace="~{fragments/header :: header(title = 'TITLE FOR THIS PAGE', cssLick = 'SRC OF CSS FOR THIS PAGE')}"></div>
+
+<body>
+<!--For good footer position-->
+<div id="page-container">
+  <div id="content-wrap">
+
+    <!--  Navbar section-->
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+    <!--Content section-->
+    <div class="_content-position">
+
+    </div>
+
+    <!--Footer-->
+    <div th:replace="~{fragments/footer :: footer}"></div>
+  </div>
+</div>
+
+
+<!--Scripts section-->
+<div th:replace="~{fragments/scriptsfragment :: scripts(scriptLink = 'SRC OF SCRIPT FOR THIS PAGE', langJsonPath = 'SRC OF JSON FOR LANGUAGE IN THIS PAGE')}"></div>
+</body>
+</html>

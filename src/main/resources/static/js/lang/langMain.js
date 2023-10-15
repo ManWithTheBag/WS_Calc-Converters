@@ -18,4 +18,7 @@ function langChange(lang){
             element.textContent = langFragmentJSON[key][lang];
         }
     }
+
+    // Function in main.js
+    setUppercase();
 }

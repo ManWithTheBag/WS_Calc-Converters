@@ -13,15 +13,15 @@
         <div class="_content-position">
             <!--Text section-->
             <div>
-                <samp class="_lang-trig-func  _text-mainTitle">trigonometric functions</samp>
+                <samp class="_uppercase-each-sentences _lang-trig-func  _text-mainTitle">
+                    trigonometric functions</samp>
                 <br>
                 <br>
-                <div class="_text-uppercase-first">
-                    <span class="_lang-trig-definition _text-simple">
+                <span class="_uppercase-each-sentences _lang-trig-definition _text-simple">
                     in mathematics, the trigonometric functions are real functions which relate
                         an angle of a right-angled triangle to ratios of two side lengths. the
-                        trigonometric functions most widely used in modern mathematics are the sine, the cosine, and the tangent.</span>
-                </div>
+                        trigonometric functions most widely used in modern mathematics are the sine, the cosine, and the tangent.
+                </span>
             </div>
             <br>
 
@@ -44,17 +44,19 @@
                     <div class="form-check form-check-inline _items-align-center _input-ratio-position">
                         <input id="r_degrees" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="degree" checked>
-                        <label for="r_degrees" class="_lang-trig-degrees _text-uppercase form-check-label _radio-labels">degrees</label>
+                        <label for="r_degrees"
+                               class="_lang-trig-degrees _uppercase-each-sentences form-check-label _radio-labels">degrees</label>
                     </div>
                     <div class="form-check form-check-inline _items-align-center _input-ratio-position">
                         <input id="r_radians" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="radians">
-                        <label for="r_radians" class="_lang-trig-radians _text-uppercase form-check-label _radio-labels">radians</label>
+                        <label for="r_radians"
+                               class="_lang-trig-radians _uppercase-each-sentences form-check-label _radio-labels">radians</label>
                     </div>
                     <div class="form-check form-check-inline _items-align-center _input-ratio-position">
                         <input id="r_grads" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="grads">
-                        <label for="r_grads" class="_lang-trig-grads _text-uppercase form-check-label _radio-labels">grads</label>
+                        <label for="r_grads" class="_lang-trig-grads _uppercase-each-sentences form-check-label _radio-labels">grads</label>
                     </div>
                 </div>
                 <!--Input value and result section-->
@@ -81,21 +83,25 @@
                     </div>
                 </div>
                 <div>
-                    <button id="trig-button" class="_lang-button-calc _text-uppercase btn btn-secondary btn-lg _trig-button" onclick="trigButton()">calculate</button>
-<!--                    <input id="trig-button" class="btn btn-secondary btn-lg _trig-button" type="button"-->
-<!--                           value="Calculate" onclick="trigButton()">-->
+                    <button id="trig-button"
+                            class="_lang-button-calc _uppercase-each-sentences btn btn-secondary btn-lg _trig-button"
+                            onclick="trigButton()">calculate
+                    </button>
+                    <!--                    <input id="trig-button" class="btn btn-secondary btn-lg _trig-button" type="button"-->
+                    <!--                           value="Calculate" onclick="trigButton()">-->
                 </div>
 
                 <!--Trigonometry Table-->
                 <div class="_table-section-position">
-                    <div class="_text-uppercase-first">
-                        <samp class="_lang-trig-table _text-mainTitle">trigonometry table</samp>
+                    <div>
+                        <samp class="_lang-trig-table _uppercase-each-sentences _text-mainTitle">trigonometry table</samp>
                     </div>
 
                     <table>
                         <tbody>
                         <tr>
-                            <td><strong class="_lang-table-angle-degree _text-uppercase-first" >angles (in degrees)</strong></td>
+                            <td><strong class="_lang-table-angle-degree _uppercase-each-sentences">angles (in
+                                degrees)</strong></td>
                             <td><strong>0°</strong></td>
                             <td><strong>30°</strong></td>
                             <td><strong>45°</strong></td>
@@ -103,7 +109,7 @@
                             <td><strong>90°</strong></td>
                         </tr>
                         <tr>
-                            <td><strong class="_lang-table-angle-rad" >angles (in radian)</strong></td>
+                            <td><strong class="_lang-table-angle-rad _uppercase-each-sentences">angles (in radian)</strong></td>
                             <td><strong>0</strong></td>
                             <td><strong>π/6</strong></td>
                             <td><strong>π/4</strong></td>
@@ -164,6 +170,7 @@
             </div>
         </div>
 
+        <!--Footer-->
         <div th:replace="~{fragments/footer :: footer}"></div>
     </div>
 </div>

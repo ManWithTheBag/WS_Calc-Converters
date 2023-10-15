@@ -27,9 +27,4 @@ public class MainController {
     }
 
 
-    @GetMapping("/one")
-    public String one(){
-        return "/one";
-    }
-
 }

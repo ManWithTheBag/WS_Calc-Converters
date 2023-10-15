@@ -16,12 +16,7 @@ body {
 
 /**/
 /*Setup text case*/
-._text-uppercase{
-    text-transform: capitalize
-}
-._text-uppercase-first ::first-letter{
-    text-transform: capitalize
-}
+._uppercase-each-sentences{}
 /**/
 
 /**/
