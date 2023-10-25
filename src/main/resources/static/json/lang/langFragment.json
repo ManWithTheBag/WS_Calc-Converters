@@ -1,6 +1,11 @@
 {
   "nav-calculators": {
     "en": "calculators",
+    "ua": "конвертер",
+    "ru": "конвертер"
+  },
+  "nav-converter": {
+    "en": "converter",
     "ua": "калькулятор",
     "ru": "калькулятор"
   },

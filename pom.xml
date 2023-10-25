@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>mathonline</artifactId>
+    <artifactId>calcconverter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mathonline</name>
-    <description>mathonline</description>
+    <name>calcconverter</name>
+    <description>calcconverter</description>
     <properties>
         <java.version>17</java.version>
     </properties>

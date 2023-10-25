@@ -1,4 +1,4 @@
-package org.example.mathonline;
+package org.example.calcconverter;
 
 //import org.junit.jupiter.api.Test;
 //import org.springframework.boot.test.context.SpringBootTest;

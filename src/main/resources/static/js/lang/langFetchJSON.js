@@ -14,7 +14,7 @@ then(function (response){
 
 
 //
-// Get fragments JSON
+// Get common fragments JSON
 fetch('/json/lang/langFragment.json').
 then(function (response){
     return response.json();

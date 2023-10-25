@@ -11,7 +11,7 @@ function langChange(lang){
         }
     }
 
-    // Fragments JSON
+    // Common fragments JSON
     for (let key in langFragmentJSON) {
         element = document.querySelector("._lang-" + key);
         if(element != null){
