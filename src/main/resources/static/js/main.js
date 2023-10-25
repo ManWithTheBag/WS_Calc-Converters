@@ -19,6 +19,8 @@ function setUppercase(){
     textElements.forEach((element) => elementToUppercase(element))
 
 }
+
+//
 function elementToUppercase(textElement){
     var preparedText = textElement.textContent.replace(/^\s+|\s+$/gm,'').split(".").map((item) =>{
         let clearElement = item.replace(/^\s+|\s+$/gm,'');

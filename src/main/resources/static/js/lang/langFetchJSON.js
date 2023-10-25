@@ -10,6 +10,7 @@ then(function (response){
 })
     .then(function (data){
         langPersonalJSON = data;
+        langChange(localStorage.getItem("preferLang"));
     })
 
 
@@ -21,12 +22,6 @@ then(function (response){
 })
     .then(function (data){
         langFragmentJSON = data;
+        langChange(localStorage.getItem("preferLang"));
     })
 
-// for (let key in langCalculationList) {
-//     console.log(key);
-//     for (let key1 in langCalculationList[key]) {
-//         console.log(key1)
-//         console.log(langCalculationList[key][key1])
-//     }
-// }

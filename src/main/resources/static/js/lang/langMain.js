@@ -1,7 +1,13 @@
 
 let element;
 
+function setNewLang(lang){
+    localStorage.setItem("preferLang", lang);
+    langChange(lang);
+}
+
 function langChange(lang){
+    if(lang == null) return;
 
     // Personal JSON
     for (let key in langPersonalJSON) {
