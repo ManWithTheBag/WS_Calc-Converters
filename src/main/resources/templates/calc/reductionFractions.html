@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<div th:replace="~{fragments/header :: header(title = 'Reduction Fractions', cssLick ='/css/calc/reduct_fraction.css')}"></div>
+
+<body>
+<!--For good footer position-->
+<div id="page-container">
+    <div id="content-wrap">
+
+        <!--  Navbar section-->
+        <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+        <!--Content section-->
+        <div class="_content-position">
+            <!--Text section-->
+            <div>
+                <samp class="_uppercase-each-sentences _lang-reduct  _text-mainTitle">
+                    reducing arithmetic fraction</samp>
+                <br>
+                <br>
+                <samp class="_uppercase-each-sentences _lang-reduct-definition _text-simple">
+                    if the numerator and denominator of a fraction have a common divisor
+                    (that is, they are divided by the same number), then the numerator and denominator
+                    of the fraction can be divided by it. This operation is called fraction reduction.</samp>
+            </div>
+
+            <!--Calc form section-->
+            <div class="_calc-form-position _items-align-row-center">
+                <!--Input section-->
+                <div class="_items-column">
+                    <input id="numerator_value" class="_input-number _border" type="number" step="1" min="0" value="0">
+                    <input id="denominator_value" class="_input-number _border" type="number" step="1" min="0"
+                           value="0">
+                </div>
+
+                <!--Result section-->
+                <div>
+                    <samp class="_text-calc-result">=</samp>
+                    <samp id="reduct_result" class="_text-calc-result">00000</samp>
+                </div>
+            </div>
+            <!--Button section-->
+            <div class="_items-align-row-center">
+                <div>
+                    <button id="calc-button"
+                            class="_lang-button-calc _uppercase-each-sentences btn btn-secondary btn-lg _calc-button"
+                            onclick="trigButton()">calculate
+                    </button>
+                </div>
+                <div>
+                    <button id="reset-button"
+                            class="_lang-button-reset _uppercase-each-sentences btn btn-secondary btn-lg _reset-button"
+                            onclick="trigButton()">reset
+                    </button>
+                </div>
+            </div>
+
+            <!--Examples section-->
+            <div class="_new-section-position _example-background _border">
+                <samp class="_lang-example _uppercase-each-sentences _text-mainTitle">examples</samp>
+                <br>
+                <div class="_img-example-task">
+                    <samp class="_lang-example-title _uppercase-each-sentences _text-minorTitle _text-example-title">let's
+                        reduce the fraction</samp>
+                    <img src="/img/calc/reduction_fraction/reduct_fraction-15_35.png" alt="15/35">
+                </div>
+                <br>
+                <div>
+                    <samp class="_text-simple"><em class="_text-simple"><strong
+                            class="_uppercase-each-sentences _lang-example-solution-1 ">solution</strong></em>:
+                        <samp class="_uppercase-each-sentences _lang-example-solution-2 _text-simple">the largest number
+                            that
+                            divides </samp><em class="_text-simple"><strong> 15</strong></em>
+                        <samp class="_lang-example-solution-3 _text-simple">and</samp>
+                        <em class="_text-simple"><strong>35,</strong></em>
+                        <samp class="_lang-example-solution-4">is</samp> <em
+                                class="_text-simple"><strong>5</strong></em>.
+                        <samp class="_uppercase-each-sentences _lang-example-solution-5 _text-simple">therefore, to
+                            reduce our
+                            fraction, we divide its numerator and denominator by</samp> <em
+                                class="_text-simple"><strong>5.</strong></em>
+                    </samp>
+                </div>
+
+                <img class="_img-example" src="/img/calc/reduction_fraction/example-reduction_function.png"
+                     alt="example of reduction fraction">
+
+            </div>
+            <br>
+        </div>
+
+        <!--Footer-->
+        <div th:replace="~{fragments/footer :: footer}"></div>
+    </div>
+</div>
+
+
+<!--Scripts section-->
+<div th:replace="~{fragments/scriptsfragment :: scripts(scriptLink = '/js/calc/reductionFractions.js', langJsonPath = '/json/lang/calc/langReductionFraction.json')}"></div>
+</body>
+</html>

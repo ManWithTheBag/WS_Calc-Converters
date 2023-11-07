@@ -1,42 +1,53 @@
-
-._border{
-    border: 3px solid #F1EFEF;
+/**/
+/*Positions*/
+._new-section-position{
+    margin-top: 3rem;
+    /*margin-bottom: 12rem;*/
 }
-
 ._calc-form-position{
     margin-top: 2rem;
 }
 
-._img-triangeln{
-    height: 18rem;
+/**/
+/*Buttons*/
+._calc-button{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    background-color: #0F2C59;
 }
-._img-function{
-    height: 20rem;
-    margin-left: 2rem;
+._calc-button:hover{
+    background-color: #234f91;
+}
+._reset-button{
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-right: 2rem;
 }
 
-
+/**/
+/*Selector*/
 ._form-select-position{
     margin-right: 0.8rem;
 }
 .form-select{
     font-size: 2rem;
 }
-.form-select:valid:focus{
+.form-select:valid:focus {
     box-shadow: none;
     border: 3px solid #0F2C59;
 }
 
-
+/**/
+/*Inputs*/
 ._input-number{
     text-align: center;
     width: 10rem;
     font-size: 2rem;
 }
-._breaks{
-    font-size: 2.4rem;
+._border{
+    border: 3px solid #F1EFEF;
 }
-
 ._input-radio-form-position{
     margin-bottom: 1rem;
 }
@@ -53,34 +64,25 @@
     font-size: 2rem;
 }
 
-._trig-result{
+/**/
+/*Text*/
+._text-calc-result{
     margin-left: 1.5rem;
     font-family: 'Wix Madefor Text', sans-serif;
     font-size: 2rem;
     font-weight: 300;
 }
-._trig-button{
-    margin-top: 2rem;
-    font-size: 2rem;
+
+/**/
+/*Example*/
+._example-background{
+    background-color: #efeded;
+    border-radius: 3px;
+    border: 3px solid #F1EFEF;
+    padding: 1rem;
 }
 
 
-._table-section-position{
-    margin-top: 3rem;
-    /*margin-bottom: 12rem;*/
-}
-table{
-    margin-top: 1rem;
-    max-width: 45rem;
-}
-table, tr, td {
-    width: 100%;
-    min-width: 5rem;
-    border: 1px solid #252B48;
-    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-    font-size: 1rem;
-    font-family: 'Wix Madefor Text', sans-serif;
-}
 
 
 

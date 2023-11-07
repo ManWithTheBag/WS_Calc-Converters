@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<div th:replace="~{fragments/header :: header(title = 'Calculators', cssLick = '/calculator.css')}"></div>
+<div th:replace="~{fragments/header :: header(title = 'Calculators', cssLick = '/css/calc/trigonometry.css')}"></div>
 
 <body>
 <div id="page-container">
@@ -26,7 +26,7 @@
             <br>
 
             <!--Img section-->
-            <div class="_items-align-center">
+            <div class="_items-align-row-center">
                 <div>
                     <img class="_img-triangeln" src="/img/calc/trigonometry/right-angled-triangle_3.png"
                          alt="Right-angled triangle"/>
@@ -40,27 +40,27 @@
             <!--Calc form section-->
             <div class="_calc-form-position">
                 <!--Radio input section-->
-                <div class="_input-radio-form-position _items-align-center">
-                    <div class="form-check form-check-inline _items-align-center _input-ratio-position">
+                <div class="_input-radio-form-position _items-align-row-center">
+                    <div class="form-check form-check-inline _items-align-row-center _input-ratio-position">
                         <input id="r_degrees" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="degree" checked>
                         <label for="r_degrees"
                                class="_lang-trig-degrees _uppercase-each-sentences form-check-label _radio-labels">degrees</label>
                     </div>
-                    <div class="form-check form-check-inline _items-align-center _input-ratio-position">
+                    <div class="form-check form-check-inline _items-align-row-center _input-ratio-position">
                         <input id="r_radians" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="radians">
                         <label for="r_radians"
                                class="_lang-trig-radians _uppercase-each-sentences form-check-label _radio-labels">radians</label>
                     </div>
-                    <div class="form-check form-check-inline _items-align-center _input-ratio-position">
+                    <div class="form-check form-check-inline _items-align-row-center _input-ratio-position">
                         <input id="r_grads" type="radio" name="radiobutton"
                                class="_input-radio form-check-input _border" value="grads">
                         <label for="r_grads" class="_lang-trig-grads _uppercase-each-sentences form-check-label _radio-labels">grads</label>
                     </div>
                 </div>
                 <!--Input value and result section-->
-                <div class="_items-align-center">
+                <div class="_items-align-row-center">
                     <!--Select section-->
                     <div class="_form-select-position">
                         <select id="trig_func" class="form-select _border">
@@ -72,30 +72,30 @@
                     </div>
                     <!--Input value section-->
                     <div>
-                        <samp class="_breaks">(</samp>
+                        <samp class="_text-breaks">(</samp>
                         <input id="trig_value" class="_input-number _border" type="number" step="1" min="0"
                                value="0">
-                        <samp class="_breaks">) = </samp>
+                        <samp class="_text-breaks">) = </samp>
                     </div>
                     <!--Result section-->
                     <div>
-                        <samp id="trig_result" class="_trig-result"></samp>
+                        <samp id="trig_result" class="_text-calc-result"></samp>
                     </div>
                 </div>
                 <div>
-                    <button id="trig-button"
-                            class="_lang-button-calc _uppercase-each-sentences btn btn-secondary btn-lg _trig-button"
+                    <button id="calc-button"
+                            class="_lang-button-calc _uppercase-each-sentences btn btn-secondary btn-lg _calc-button"
                             onclick="trigButton()">calculate
                     </button>
                 </div>
 
                 <!--Trigonometry Table-->
-                <div class="_table-section-position">
+                <div class="_new-section-position">
                     <div>
                         <samp class="_lang-trig-table _uppercase-each-sentences _text-mainTitle">trigonometry table</samp>
                     </div>
 
-                    <table>
+                    <table class="_trig-table">
                         <tbody>
                         <tr>
                             <td><strong class="_lang-table-angle-degree _uppercase-each-sentences">angles (in

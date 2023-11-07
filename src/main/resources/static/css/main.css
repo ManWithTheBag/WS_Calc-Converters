@@ -25,11 +25,14 @@ body {
     margin: 1rem 20rem 0rem 1rem ;
 }
 
-._items-align-center{
+._items-align-row-center{
     display: flex;
     align-items: center;
 }
-
+._items-column{
+    display: flex;
+    flex-direction: column;
+}
 ._text-align-center{
     text-align: center;
 }
@@ -40,13 +43,13 @@ body {
 ._text-mainTitle{
     font-family: 'Wix Madefor Text', sans-serif;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 1rem;
 }
 ._text-minorTitle{
     font-family: 'Wix Madefor Text', sans-serif;
     font-size: 2.2rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 1rem;
 }
 ._text-simple{
@@ -54,4 +57,8 @@ body {
     font-size: 1.4rem;
     font-weight: 300;
 }
+strong{
+    font-weight:bold;
+}
+
 /**/

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<div th:replace="~{fragments/header.html :: header(title = 'Calculators', cssLick = '/calculatorsList.css')}"></div>
+<div th:replace="~{fragments/header.html :: header(title = 'Calculators', cssLick = '/calc-converterList.css')}"></div>
 <body>
 <div id="page-container">
     <div id="content-wrap">
@@ -14,12 +14,25 @@
                 <samp class="_lang-calculators _uppercase-each-sentences _text-mainTitle">calculators</samp>
             </div>
 
+            <!--Trigonometry-->
             <div>
                 <samp class="_lang-trigonometry _uppercase-each-sentences _text-minorTitle">trigonometry</samp>
                 <div>
                     <ul>
                         <li>
-                            <a class="_lang-trigonometry-functions _text-simple _links" href="/trigonometry">calculation of sine, cosine, tangent and cotangent</a>
+                            <a class="_lang-trigonometry_functions _text-simple _links" href="/trigonometry">calculation of sine, cosine, tangent and cotangent</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Fractions, Percentages-->
+            <div>
+                <samp class="_lang-fractions_percentages _uppercase-each-sentences _text-minorTitle">fractions, percentages</samp>
+                <div>
+                    <ul>
+                        <li>
+                            <a class="_lang-reduction_fraction _text-simple _links" href="/reduction-fraction">reducing arithmetic fractions</a>
                         </li>
                     </ul>
                 </div>

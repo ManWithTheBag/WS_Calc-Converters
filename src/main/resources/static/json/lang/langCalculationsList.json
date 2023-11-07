@@ -4,15 +4,31 @@
     "ua": "калькулятор",
     "ru": "калькулятор"
   },
+
+
+
   "trigonometry": {
     "en": "trigonometry",
     "ua": "тригонометрія",
     "ru": "тригонометрия"
   },
-  "trigonometry-functions": {
+  "trigonometry_functions": {
     "en": "calculation of sine, cosine, tangent and cotangent",
     "ua": "обчислення синуса, косинуса, тангенса і котангенса",
     "ru": "расчет синуса, косинуса, тангенса и котангенса"
+  },
+
+
+
+  "fractions_percentages": {
+    "en": "fractions, percentages",
+    "ua": "дроби, відсотки",
+    "ru": "дроби, проценты"
+  },
+  "reduction_fraction": {
+    "en": "reducing arithmetic fractions",
+    "ua": "скорочення арифметичних дробів",
+    "ru": "сокращение арифметических дробей"
   }
 }
 

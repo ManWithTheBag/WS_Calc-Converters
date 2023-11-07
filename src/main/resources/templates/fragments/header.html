@@ -10,7 +10,11 @@
         <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}">
         <link rel="stylesheet" href="/css/fragmentsCSS/navbar.css" th:href="@{/css/fragmentsCSS/navbar.css}">
         <link rel="stylesheet" href="/css/fragmentsCSS/navbar.css" th:href="@{/css/fragmentsCSS/footer.css}">
-        <link rel="stylesheet" th:href="@{'/css' + ${cssLick}}">
+
+        <link rel="stylesheet" href="/css/calc-converter.css" th:href="@{/css/calc-converter.css}">
+        <th:block th:if="${cssLick != null}">
+            <link rel="stylesheet" th:href="@{${cssLick}}">
+        </th:block>
 
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">

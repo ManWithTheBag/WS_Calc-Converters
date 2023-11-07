@@ -20,11 +20,4 @@ public class MainController {
     public String calculatorsList() {
         return "calculatorsList";
     }
-
-    @GetMapping("/trigonometry")
-    public String trigonometry() {
-        return "calc/trigonometry";
-    }
-
-
 }

@@ -1,0 +1,17 @@
+/**/
+/*Image*/
+._img-example-task{
+    margin-top: 2rem;
+}
+._img-example{
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**/
+/*Example*/
+._text-example-title{
+    margin: 0;
+}
