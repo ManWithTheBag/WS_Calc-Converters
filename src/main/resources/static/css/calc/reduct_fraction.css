@@ -11,7 +11,43 @@
 }
 
 /**/
+/*Fraction*/
+._frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+._frac > span {
+    display: block;
+    padding: 0.1em;
+    margin: 0;
+}
+._frac span.bottom {
+    border-top: medium solid black;
+}
+._frac span.symbol {
+    display: none;
+}
+
+/**/
+/*Exception*/
+._text-result-exception{
+    color: #cb0a0a;
+}
+
+/**/
 /*Example*/
 ._text-example-title{
     margin: 0;
+}
+
+/**/
+/*Input*/
+._numeration-border{
+    border-bottom: thin solid black;
+}
+._denominator-border{
+    border-top: thin solid black;
 }

@@ -36,6 +36,10 @@ body {
 ._text-align-center{
     text-align: center;
 }
+
+._item-simple-margin{
+    margin: 1rem;
+}
 /**/
 
 /**/

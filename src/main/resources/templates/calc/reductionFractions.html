@@ -28,15 +28,38 @@
             <div class="_calc-form-position _items-align-row-center">
                 <!--Input section-->
                 <div class="_items-column">
-                    <input id="numerator_value" class="_input-number _border" type="number" step="1" min="0" value="0">
-                    <input id="denominator_value" class="_input-number _border" type="number" step="1" min="0"
+                    <input id="input-numerator" class="_input-number _border _numeration-border" type="number" step="1" min="0" value="0">
+                    <input id="input-denominator" class="_input-number _border _denominator-border" type="number" step="1" min="0"
                            value="0">
                 </div>
 
                 <!--Result section-->
-                <div>
-                    <samp class="_text-calc-result">=</samp>
-                    <samp id="reduct_result" class="_text-calc-result">00000</samp>
+                <div class="_items-align-row-center">
+                    <div>
+                        <samp class="_text-calc-result _item-simple-margin">=</samp>
+                    </div>
+
+                    <div id="reduce_result">
+                        <div class="_items-align-row-center">
+                            <div class="_frac">
+                                <span id="reduce-solve-num" class="_text-calc-result"></span>
+                                <span class="symbol">/</span>
+                                <span id="reduce-solve-denom" class="bottom _text-calc-result"></span>
+                            </div>
+                            <div>
+                                <samp class="_text-calc-result _item-simple-margin">=</samp>
+                            </div>
+                            <div class="_frac">
+                                <span id="reduce-result-num" class="_text-calc-result"></span>
+                                <span class="symbol">/</span>
+                                <span id="reduce-result-denom" class="bottom _text-calc-result"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <samp id="reduce_exception" class="_text-calc-result _text-result-exception"></samp>
                 </div>
             </div>
             <!--Button section-->
@@ -44,13 +67,13 @@
                 <div>
                     <button id="calc-button"
                             class="_lang-button-calc _uppercase-each-sentences btn btn-secondary btn-lg _calc-button"
-                            onclick="trigButton()">calculate
+                            onclick="reduceButton()">calculate
                     </button>
                 </div>
                 <div>
                     <button id="reset-button"
                             class="_lang-button-reset _uppercase-each-sentences btn btn-secondary btn-lg _reset-button"
-                            onclick="trigButton()">reset
+                            onclick="resetButton()">reset
                     </button>
                 </div>
             </div>
