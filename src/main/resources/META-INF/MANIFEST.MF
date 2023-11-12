@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: org.example.calcconverter.CalcConverterApplication
+Main-Class: org.calc_converter.ws_calcconverter.WsCalcConverterApplicati
+ on
 
